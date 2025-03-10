@@ -1,100 +1,177 @@
-/* General Styles */
+/* Global Styles */
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 body {
-font-family: 'Roboto', sans-serif;
-background-color: #111;
+font-family: 'Poppins', sans-serif;
+background-color: #101010;
 color: #fff;
+line-height: 1.6;
 }
 h1, h2, h3, p {
 margin-bottom: 20px;
 }
-h1, h2 {
-font-family: 'Inter', sans-serif;
-font-weight: 500;
+h1 {
+font-weight: 600;
 }
-/* Header Section (Hero) */
-..hero {
-background: url('brickell-bg.jpg') no-repeat center center fixed;
-background-size: cover;
-padding: 100px 20px;
-text-align: center;
+ul {
+list-style-type: none;
+}
+a {
+text-decoration: none;
 color: #fff;
+}
+/* Navbar */
+..navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+background-color: #101010;
+border-bottom: 2px solid #333;
+}
+..navbar .logo {
+font-size: 2rem;
+font-weight: 600;
+color: #f4b400; /* Gold Accent */
+}
+..navbar nav ul {
+display: flex;
+}
+..navbar nav ul li {
+margin-left: 30px;
+}
+..navbar nav ul li a {
+font-weight: 600;
+text-transform: uppercase;
+color: #fff;
+font-size: 1.1rem;
+transition: color 0.3s ease;
+}
+..navbar nav ul li a:hover {
+color: #f4b400; /* Gold Highlight */
+}
+..whitepaper {
+font-weight: bold;
+font-size: 1.2rem;
+color: #f4b400;
+}
+/* Hero Section */
+..hero {
+background: url('https://via.placeholder.com/1600x800') no-repeat center center fixed;
+background-size: cover;
 height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+background-blur: 10px;
 }
 ..hero-content {
-max-width: 800px;
-margin: 0 auto;
+max-width: 600px;
 }
 h1 {
 font-size: 4rem;
-color: #1e90ff; /* Neon Blue */
-text-shadow: 0 0 15px #1e90ff, 0 0 20px #1e90ff;
+color: #fff;
+text-shadow: 0 0 40px rgba(244, 180, 0, 0.8);
 }
 p {
 font-size: 1.5rem;
-color: #d3d3d3;
 margin-bottom: 30px;
+color: rgba(255, 255, 255, 0.8);
 }
 ..cta-button {
-background-color: #1e90ff;
+background-color: #f4b400;
 color: #fff;
 padding: 15px 30px;
-font-size: 1.1rem;
-border: none;
-border-radius: 25px;
-text-decoration: none;
+font-size: 1.2rem;
+border-radius: 50px;
+box-shadow: 0 0 20px rgba(244, 180, 0, 0.6);
 transition: all 0.3s ease;
-box-shadow: 0 0 10px #1e90ff;
+font-weight: 600;
 }
 ..cta-button:hover {
-background-color: #ff1493; /* Neon Pink */
-box-shadow: 0 0 20px #ff1493;
+background-color: #ff1493;
+box-shadow: 0 0 30px rgba(255, 20, 147, 0.8);
 }
-section {
-padding: 60px 20px;
-}
-..container {
-max-width: 1200px;
-margin: 0 auto;
+/* About Section */
+..about {
+background-color: #1a1a1a;
+padding: 100px 20px;
 text-align: center;
 }
-..features-list {
+..about h2 {
+font-size: 2.8rem;
+font-weight: 600;
+color: #f4b400;
+}
+..about p {
+font-size: 1.2rem;
+color: #ddd;
+max-width: 800px;
+margin: 0 auto;
+line-height: 1.6;
+}
+..cta-container {
+margin-top: 40px;
+}
+..about .cta-button {
+background-color: #ff1493;
+}
+/* Features Section */
+..features {
+background-color: #222;
+padding: 80px 20px;
+text-align: center;
+}
+..features h2 {
+font-size: 2.5rem;
+color: #f4b400;
+margin-bottom: 50px;
+}
+..feature-list {
 display: flex;
 justify-content: space-around;
-margin-top: 40px;
 }
 ..feature {
 width: 30%;
-background-color: #222;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+background-color: #333;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 transition: all 0.3s ease;
+}
+..feature h3 {
+font-size: 1.5rem;
+color: #f4b400;
+}
+..feature p {
+color: #ddd;
 }
 ..feature:hover {
 transform: scale(1.05);
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
 }
+/* Footer */
 footer {
-background-color: #222;
-padding: 40px 0;
+background-color: #000;
+padding: 60px 20px;
 text-align: center;
+color: #ddd;
 }
 footer .social-media a {
-color: #1e90ff;
-text-decoration: none;
 margin: 0 15px;
-font-size: 1.2rem;
+font-size: 1.5rem;
+color: #f4b400;
+font-weight: 600;
 transition: color 0.3s ease;
 }
 footer .social-media a:hover {
 color: #ff1493;
 }
 footer p {
-color: #d3d3d3;
-margin-top: 15px;
+font-size: 1.1rem;
 }
